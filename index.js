@@ -132,18 +132,18 @@
 // Ajuste la fonction qui prend en paramètre une string et qui renvoie un tableau avec toutes les rotations possibles de cette string.
 // Exemple : "Hello" => ["elloH", "lloHe", "loHel", "oHell", "Hello"]
 
-function getStringRotations(string) {
-    const rotations = [];
-    for (let i = 0; i < string.length; i++) {
+// function getStringRotations(string) {
+//     const rotations = [];
+//     for (let i = 0; i < string.length; i++) {
 
-        const rotation = string.slice(i) + string.slice(0, i);
-        rotations.push(rotation);
-    }
+//         const rotation = string.slice(i) + string.slice(0, i);
+//         rotations.push(rotation);
+//     }
 
-    return rotations;
-}
+//     return rotations;
+// }
 
-console.info("Exercice 10 : ", getStringRotations("Hello"));
+// console.info("Exercice 10 : ", getStringRotations("Hello"));
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 11
@@ -151,7 +151,12 @@ console.info("Exercice 10 : ", getStringRotations("Hello"));
 // Ajuste la fonction qui prend en paramètre un tableau et qui doit ajouter le nombre 1 à chaque élément du tableau.
 // Exemple : [1, 2, 3] => [2, 3, 4]
 
-// export const incrementArray = () => {}
+// function incrementArray(array) {
+//     for (let i = 0; i < array.length; i++) {
+//         array[i] += 1;
+//     }
+//     return array;
+// }
 
 // console.info("Exercice 11 : ", incrementArray([1, 2, 3]));
 
@@ -161,7 +166,9 @@ console.info("Exercice 10 : ", getStringRotations("Hello"));
 // Ajuste la fonction qui prend en paramètre un tableau de string et qui doit retourner un tableau avec la longueur de chaque string.
 // Exemple : ["Hello", "World"] => [5, 5]
 
-// export const getLengths = () => {}
+// function getLengths(array) {
+//     return array.map(element => element.length);
+// }
 
 // console.info("Exercice 12 : ", getLengths(["Hello", "World"]));
 
@@ -171,7 +178,11 @@ console.info("Exercice 10 : ", getStringRotations("Hello"));
 // Ajuste la fonction qui prend en paramètre un tableau de string et qui doit retourner un tableau avec toutes les premières lettres de chaque string.
 // Exemple : ["Hello", "World"] => ["H", "W"]
 
-// export const getFirstLetters = () => {}
+// function getFirstLetters(array) {
+//     return array.map (function(element) {
+//         return element[0];
+//     });
+// }
 
 // console.info("Exercice 13 : ", getFirstLetters(["Hello", "World"]));
 
