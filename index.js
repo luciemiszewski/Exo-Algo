@@ -186,14 +186,19 @@
 
 // console.info("Exercice 13 : ", getFirstLetters(["Hello", "World"]));
 
-//----------------------------------------------------------------------------------------------//
+// //----------------------------------------------------------------------------------------------//
 // EXERCICE 14
 
 // Ajuste la fonction qui prend en paramètre un tableau de string et qui doit retourner un tableau avec toutes les dernières lettres de chaque string.
 // Exemple : ["Hello", "World"] => ["o", "d"]
 
-// export const getLastLetters = () => {}
-
+// function getLastLetters(strings) {
+//     return strings.map(function(strings) {
+//         if (typeof strings === 'string' && strings.length > 0) {
+//             return strings[strings.length - 1];
+//         }
+//     })
+// }
 // console.info("Exercice 14 : ", getLastLetters(["Hello", "World"]));
 
 //----------------------------------------------------------------------------------------------//
@@ -202,10 +207,11 @@
 // Ajuste la fonction qui prend en paramètre un tableau de string et qui doit renvoyer tout les string qui ont une longueur de 5 caractères ou plus.
 // Exemple : ["Hello", "World","Test", "Salut", "Yo"] => ["Hello", "World", "Salut"]
 
-// export const filterLongStrings = () => {
-
-// };
-
+// function filterLongStrings(strings) {
+//     return strings.filter(function(strings) {
+//         return strings.length >= 5;
+//     });
+// }
 // console.info(
 // 	"Exercice 15 : ",
 // 	filterLongStrings(["Hello", "World", "Test", "Salut", "Yo"]),
