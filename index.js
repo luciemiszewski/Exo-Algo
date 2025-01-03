@@ -223,7 +223,9 @@
 // Ajuste la fonction qui prend une chaîne de caractères en format snake_case et doit retourner une nouvelle chaîne de caractères contenant les mêmes mots, mais sans les underscores.
 // Exemple : "Bonjour_c'est_papy" => "bonjour c'est papy"
 
-// export const snake_case = () => {}
+// function snake_case(string) {
+//     return string.replace(/_/g, ' ');
+// }
 
 // console.info("Exercice 16 : ", snake_case("Bonjour_c'est_papy"));
 
@@ -233,22 +235,26 @@
 // Ajuste la fonction qui prend en deux paramètres qui sont deux tableaux de string et qui doit retourner un tableau avec tout les éléments des deux tableaux.
 // Exemple : ["Hello", "World"] et ["Test", "Salut"] => ["Hello", "World", "Test", "Salut"]
 
-// export const mergeArrays = () => {}
+// function mergeArrays(tab1, tab2) {
+// 	return tab1.concat(tab2);
+// }
 
 // console.info(
 // 	"Exercice 17 : ",
 // 	mergeArrays(["Hello", "World"], ["Test", "Example"]),
 // );
 
-//----------------------------------------------------------------------------------------------//
+// //----------------------------------------------------------------------------------------------//
 // EXERCICE 18
 
 // Ajuste la fonction qui prend en paramètre un tableau de string et qui doit retourner toutes les strings qui ont la lettre "e".
 // Exemple : ["Poulet", "Chat", "Chien", "Cheval"] => ["Poulet", "Chien", "Cheval"].
 
-// export const filterStringsWithE = () => {
+// function filterStringsWithE(array) {
+// 	return array.filter(string => string.includes('e'));
+// } 
 
-// }
+
 // console.info(
 // 	"Exercice 18 : ",
 // 	filterStringsWithE(["Poulet", "Chat", "Chien", "Cheval"]),
@@ -260,9 +266,16 @@
 // Ajuste la fonction qui prend en paramètre un tableau de nombres et qui doit retourner tous les nombres qui sont pairs par ordre croissant.
 // Exemple : [2, 9, 6, 5, 6] => [2, 6, 6].
 
-// export const filterAndSortEvenNumbers = () => {
+// function filterAndSortEvenNumbers(array) {
+// 	return array
+// 	.filter(function (num) {
+// 		return num % 2 === 0;
+// 	})
+// 	.sort(function (a,b) {
+// 		return a - b;
+// 	});
+// 	}
 
-// };
 
 // console.info("Exercice 19 : ", filterAndSortEvenNumbers([2, 9, 6, 5, 6]));
 
@@ -274,12 +287,17 @@
 // findShort("Prachett is the best author in the world") // 2
 // findShort("The quick brown fox jumps over the lazy dog") // 3
 
-// export const findShort = () => {}
+function findShort(phrase) {
+	let mots = phrase.split(' ');
+	let longueurs = mots.map((mot) => mot.length);
+	let longueurMin = Math.min(...longueurs);
+	return longueurMin;
+}
 
-// console.info(
-// 	"Exercice 20 : ",
-// 	findShort("Prachett is the best author in the world"),
-// );
+console.info(
+	"Exercice 20 : ",
+	findShort("Prachett is the best author in the world"),
+);
 
 //----------------------------------------------------------------------------------------------//
 // EXERCICE 21
